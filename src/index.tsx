@@ -1,4 +1,4 @@
-import React, { CSSProperties, useState } from 'react';
+import React, { CSSProperties, useEffect, useState } from 'react';
 
 interface ToggleSliderHandleProps extends CSSProperties {
     size: number | string,
@@ -121,6 +121,17 @@ function ToggleSlider({
             </div>
         </div>
     );
+}
+
+export function useToggleSlider(props?: ToggleSliderProps) {
+
+    const [activeState, setActiveState] = useState(props?.active ?? false);
+    function onToggle(value: boolean) {
+        setActiveState(value);
+    }
+
+    return [<ToggleSlider onToggle={onToggle} {...props}/>, activeState]
+
 }
 
 export default ToggleSlider;
