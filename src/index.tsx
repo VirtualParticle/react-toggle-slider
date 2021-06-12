@@ -1,4 +1,4 @@
-import React, { CSSProperties, useEffect, useState } from 'react';
+import React, { CSSProperties, useState } from 'react';
 
 interface ToggleSliderHandleProps extends CSSProperties {
     size: number | string,
