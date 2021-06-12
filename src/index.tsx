@@ -44,6 +44,7 @@ interface ToggleSliderProps {
     barRenderer?: React.ReactNode,
     barRendererActive?: React.ReactNode,
     flip?: boolean,
+    active?: boolean,
 }
 
 function ToggleSlider({
@@ -70,9 +71,10 @@ function ToggleSlider({
                           barStylesActive,
                           handleStyles,
                           handleStylesActive,
+                          active: initialActive = false,
                       }: ToggleSliderProps) {
 
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState(initialActive);
 
     function onClick() {
         onToggle(!active);
