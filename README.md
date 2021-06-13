@@ -1,6 +1,6 @@
 # react-toggle-slider
 
-A highly-customizable React toggle slider component.
+A highly customizable React toggle slider component.
 
 ## Usage
 
