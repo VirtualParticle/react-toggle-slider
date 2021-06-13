@@ -125,7 +125,7 @@ function ToggleSlider({
     );
 }
 
-export function useToggleSlider(props?: ToggleSliderProps) {
+function useToggleSlider(props?: ToggleSliderProps) {
 
     const [activeState, setActiveState] = useState(props?.active ?? false);
 
@@ -137,4 +137,4 @@ export function useToggleSlider(props?: ToggleSliderProps) {
 
 }
 
-export default ToggleSlider;
+export { ToggleSlider, useToggleSlider };

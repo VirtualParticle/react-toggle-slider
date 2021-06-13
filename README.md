@@ -2,12 +2,22 @@
 
 A highly customizable React toggle slider component.
 
+## Installation
+
+Install using NPM:
+
+`npm install react-toggle-slider`
+
+Or install using Yarn:
+
+`yarn add react-toggle-slider`
+
 ## Usage
 
 To add the component, simply import `ToggleSlider` and use it in your app.
 
 ```tsx
-import ToggleSlider from "react-toggle-slider";
+import { ToggleSlider }  from "react-toggle-slider";
 
 function App() {
     return (
@@ -61,7 +71,7 @@ similar to represent the status on the page.
 
 ```tsx
 
-import ToggleSlider from "react-toggle-slider";
+import { ToggleSlider }  from "react-toggle-slider";
 
 function App() {
 
