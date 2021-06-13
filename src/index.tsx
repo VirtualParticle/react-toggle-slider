@@ -82,10 +82,9 @@ function ToggleSlider({
     }
 
     const overlayStyles: CSSProperties = {
+        boxSizing: "border-box",
         width: "100%",
-        height: "100%",
-        position: "absolute",
-        transition: `all ${transitionDuration}`,
+        flex: "none",
     };
 
     barStyles = active ? { ...barStyles, ...barStylesActive } : barStyles;
@@ -108,16 +107,19 @@ function ToggleSlider({
     const handleActive = handleRendererActive ?? handle;
 
     return (
-        <div style={{ position: "relative", cursor: "pointer" }} onClick={onClick}>
-            <div style={{ top: Math.max(handleSize - barHeight, 0) / 2, left: 0, ...overlayStyles }}>
+        <div style={{ display: "flex", flexFlow: "row nowrap", cursor: "pointer", width: barWidth }} onClick={onClick}>
+            <div style={{ paddingTop: Math.max(handleSize - barHeight, 0) / 2 ,transition: `all ${transitionDuration}`, ...overlayStyles }}>
                 {active ? barActive : bar}
             </div>
-            <div style={{
-                top: Math.max(barHeight - handleSize, 0) / 2,
-                left: ((active && !flip || !active && flip) ? barWidth - padding - handleSize : padding),
-                ...overlayStyles
-            }}>
-                {active ? handleActive : handle}
+            <div style={{ marginLeft: "-100%", ...overlayStyles }}>
+                <div
+                    style={{
+                        transition: `all ${transitionDuration}`,
+                        paddingTop: Math.max(barHeight - handleSize, 0) / 2,
+                        paddingLeft: ((active && !flip || !active && flip) ? barWidth - padding - handleSize : padding),
+                    }}>
+                    {active ? handleActive : handle}
+                </div>
             </div>
         </div>
     );
@@ -126,6 +128,7 @@ function ToggleSlider({
 export function useToggleSlider(props?: ToggleSliderProps) {
 
     const [activeState, setActiveState] = useState(props?.active ?? false);
+
     function onToggle(value: boolean) {
         setActiveState(value);
     }
