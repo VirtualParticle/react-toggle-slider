@@ -38,7 +38,7 @@ interface ToggleSliderProps {
     transitionDuration?: string,
     handleTransitionDuration?: string,
     barTransitionDuration?: string,
-    onToggle?: (active?: boolean) => void,
+    onToggle?: (active: boolean) => void,
     handleRenderer?: React.ReactNode,
     handleRendererActive?: React.ReactNode,
     barRenderer?: React.ReactNode,
