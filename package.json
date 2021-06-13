@@ -1,6 +1,17 @@
 {
   "name": "react-toggle-slider",
   "version": "0.2.0",
+  "author": {
+    "email": "markvadeika@gmail.com",
+    "name": "Mark Vadeika"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VirtualParticle/react-toggle-slider.git"
+  },
+  "homepage": "https://github.com/VirtualParticle/react-toggle-slider",
+  "description": "A highly-customizable React toggle slider component.",
+  "keywords": ["react", "slider", "toggle", "switch", "typescript"],
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
