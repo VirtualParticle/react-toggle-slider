@@ -1,5 +1,7 @@
 # react-toggle-slider
 
+[![npm version](https://badge.fury.io/js/react-toggle-slider.svg)](https://www.npmjs.com/package/react-toggle-slider)
+
 A highly customizable React toggle slider component.
 
 ## Installation
