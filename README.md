@@ -4,6 +4,10 @@
 
 A highly customizable React toggle slider component.
 
+![default](https://user-images.githubusercontent.com/20135416/122633007-293cda80-d0a4-11eb-90e9-86b1cce29061.gif)
+![square](https://user-images.githubusercontent.com/20135416/122632977-03173a80-d0a4-11eb-9ada-ba742ddf5aba.gif)
+
+
 ## Installation
 
 Install using NPM:
@@ -37,6 +41,7 @@ The slider works without any options, but it can be heavily customized.
 | Option | Default | Description |
 | ------------- | ------------- | ------------- |
 | `active` | `false` | Initial state | 
+| `draggable` | `true` | Whether or not the handle can be dragged |
 | `onToggle` | `undefined` | Function to call when slider is toggled, passes active state as parameter | 
 | `padding` | `5` | Padding between the handle and the sides of the bar | 
 | `flip` | `false` | Handle starts of right instead of left | 
@@ -56,6 +61,7 @@ The slider works without any options, but it can be heavily customized.
 | `barBackgroundColor` | `#dedede` | Background color of the bar | 
 | `barBackgroundColorActive` | `#06b7e7` | Background color of the bar while active | 
 | `barTransitionDuration` | `undefined` | Transition duration of the bar (overrides `transitionDuration`) | 
+| `barTransitionType` | `fade` | Specify if the bar should `fade` or `slide` |
 | `barStyles` | `undefined` | Extra styles object to be applied to the bar | 
 | `barStylesActive` | `undefined` | Extra styles object to be applied to the bar while active | 
 | `barRenderer` | `undefined` | React node to completely replace the bar | 
