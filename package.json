@@ -1,6 +1,6 @@
 {
   "name": "react-toggle-slider",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": {
     "email": "markvadeika@gmail.com",
     "name": "Mark Vadeika"
@@ -11,12 +11,20 @@
   },
   "homepage": "https://github.com/VirtualParticle/react-toggle-slider",
   "description": "A highly customizable React toggle slider component.",
-  "keywords": ["react", "slider", "toggle", "switch", "typescript"],
+  "keywords": [
+    "react",
+    "slider",
+    "toggle",
+    "switch",
+    "typescript"
+  ],
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "license": "MIT",
-  "files": ["./lib"],
+  "files": [
+    "./lib"
+  ],
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
@@ -31,5 +39,8 @@
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "color-interpolate": "^1.0.5"
   }
 }
