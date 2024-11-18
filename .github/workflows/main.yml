@@ -1,11 +1,11 @@
-name: Build and Lint
+name: Main Workflow
 on:
   pull_request:
   push:
       branches:
         - 'main'
 jobs:
-  build:
+  build-and-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

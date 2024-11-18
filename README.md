@@ -2,6 +2,8 @@
 
 [![npm version](https://badge.fury.io/js/react-toggle-slider.svg)](https://www.npmjs.com/package/react-toggle-slider)
 
+![example event parameter](https://github.com/VirtualParticle/react-toggle-slider/actions/workflows/main.yml/badge.svg?event=push)
+
 A highly customizable React toggle slider component.
 
 ![default](https://user-images.githubusercontent.com/20135416/122633007-293cda80-d0a4-11eb-90e9-86b1cce29061.gif)
