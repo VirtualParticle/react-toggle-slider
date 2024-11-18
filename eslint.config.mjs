@@ -8,6 +8,7 @@ export default tseslint.config(
         ignores: [
             'eslint.config.mjs',
             'lib/**/*',
+            'node_modules/**/*',
         ],
     },
     eslint.configs.recommended,
