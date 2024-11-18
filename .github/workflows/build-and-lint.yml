@@ -1,7 +1,9 @@
-name: PR Workflow
+name: Build and Lint
 on:
-  release:
-    types: [created]
+  pull_request:
+  push:
+      branches:
+        - 'master'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,3 +16,4 @@ jobs:
       - run: |
           yarn
           yarn build
+          yarn lint
