@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/react-toggle-slider.svg)](https://www.npmjs.com/package/react-toggle-slider)
 
-![example event parameter](https://github.com/VirtualParticle/react-toggle-slider/actions/workflows/build-and-lint.yml/badge.svg?event=push)
+![example event parameter](https://github.com/VirtualParticle/react-toggle-slider/actions/workflows/main.yml/badge.svg?event=push)
 
 A highly customizable React toggle slider component.
 
