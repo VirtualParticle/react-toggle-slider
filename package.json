@@ -29,12 +29,18 @@
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-    "dev": "tsc-watch"
+    "dev": "tsc-watch",
+    "lint": "yarn eslint ."
   },
   "devDependencies": {
+    "@eslint/js": "9.14.0",
+    "@types/eslint__js": "8.42.3",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.7",
-    "typescript": "^4.3.2"
+    "eslint": "9.14.0",
+    "example": "file:example",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "8.14.0"
   },
   "peerDependencies": {
     "react": ">=17.0.2",

@@ -11,11 +11,7 @@ function ToggleSliderHandle(props: ToggleSliderHandleProps) {
     )
 }
 
-interface ToggleSliderBarProps extends CSSProperties {
-
-}
-
-function ToggleSliderBar(props: ToggleSliderBarProps) {
+function ToggleSliderBar(props: CSSProperties) {
     return (
         <div style={props}/>
     )
@@ -126,7 +122,7 @@ function ToggleSlider({
 
     const [down, setDown] = useState(false);
 
-    function onPointerDown(e: React.PointerEvent) {
+    function onPointerDown() {
         setDown(true);
     }
 

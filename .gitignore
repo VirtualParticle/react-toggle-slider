@@ -196,3 +196,5 @@ dist
 lib/
 example/node_modules
 example/build
+
+.idea
